@@ -1,0 +1,9 @@
+# GitHub Pages config
+# AASA deve ser servido sem extensão e com Content-Type: application/json
+# Jekyll ignora arquivos em .well-known por padrão — include abaixo resolve isso.
+
+include:
+  - .well-known
+
+exclude:
+  - README.md

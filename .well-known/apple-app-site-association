@@ -1,0 +1,16 @@
+{
+  "appclips": {
+    "apps": ["TEAMID.br.com.luizsantana.Foco.Clip"]
+  },
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appIDs": ["TEAMID.br.com.luizsantana.Foco"],
+        "components": [
+          { "/": "/clip*" }
+        ]
+      }
+    ]
+  }
+}
