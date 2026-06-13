@@ -1,12 +1,12 @@
 {
   "appclips": {
-    "apps": ["TEAMID.br.com.luizsantana.Foco.Clip"]
+    "apps": ["66362QVWH7.br.com.luizsantana.Foco.Clip"]
   },
   "applinks": {
     "apps": [],
     "details": [
       {
-        "appIDs": ["TEAMID.br.com.luizsantana.Foco"],
+        "appIDs": ["66362QVWH7.br.com.luizsantana.Foco"],
         "components": [
           { "/": "/clip*" }
         ]
