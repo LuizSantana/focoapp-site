@@ -6,8 +6,15 @@ body {
   line-height: 1.5;
 }
 
+.site-nav {
+  display: flex; flex-wrap: wrap; justify-content: center; padding: 16px 24px 0; font-size: 0.85rem;
+}
+.site-nav a { color: #6e6e73; text-decoration: none; margin: 0 8px; }
+.site-nav a.active { color: #FF6A00; font-weight: 600; }
+.site-nav .sep { color: #c7c7cc; }
+
 .lang-switch {
-  display: flex; justify-content: center; gap: 8px; padding: 20px 24px 0;
+  display: flex; justify-content: center; gap: 8px; padding: 10px 24px 0;
 }
 .lang-switch a {
   font-size: 0.85rem; font-weight: 600; text-decoration: none;

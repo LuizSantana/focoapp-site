@@ -7,6 +7,11 @@ body {
 }
 .wrap { max-width: 680px; margin: 0 auto; padding: 40px 24px 80px; }
 
+.site-nav { text-align: center; font-size: 0.85rem; margin-bottom: 14px; }
+.site-nav a { color: #6e6e73; text-decoration: none; margin: 0 8px; }
+.site-nav a.active { color: #FF6A00; font-weight: 600; }
+.site-nav .sep { color: #c7c7cc; }
+
 .lang-switch {
   display: flex; justify-content: center; gap: 8px; margin-bottom: 32px;
 }
