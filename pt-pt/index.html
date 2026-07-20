@@ -36,7 +36,14 @@
     "offers": [
       { "@type": "Offer", "price": "0", "priceCurrency": "EUR", "name": "Foco+ (núcleo grátis)" },
       { "@type": "Offer", "price": "39.90", "priceCurrency": "BRL", "name": "Foco+ Pro (compra única vitalícia)" }
-    ]
+    ],
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.75",
+      "ratingCount": "4",
+      "bestRating": "5",
+      "worstRating": "1"
+    }
   }
   </script>
 
@@ -115,6 +122,8 @@
     .badge { display: inline-block; }
     .badge img { height: 52px; width: auto; }
     .hero .note { margin-top: 14px; font-size: 0.82rem; color: var(--nav-muted); }
+    .hero .trust-row { margin-top: 10px; font-size: 0.82rem; color: var(--nav-muted); display: flex; flex-wrap: wrap; gap: 4px 10px; }
+    .hero .trust-row .star { color: var(--accent-text); font-weight: 700; }
 
     .hero .visual img {
       width: 100%; max-width: 280px; height: auto; display: block; margin: 0 auto;
@@ -123,11 +132,13 @@
 
     .features {
       max-width: 1040px; margin: 0 auto; padding: 0 24px 56px;
-      display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px;
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px;
     }
-    .feature { background: var(--surface); border: 1px solid var(--border); border-radius: 14px; padding: 18px; display: flex; align-items: center; gap: 12px; }
+    .feature { background: var(--surface); border: 1px solid var(--border); border-radius: 14px; padding: 18px; }
+    .feature .feature-head { display: flex; align-items: center; gap: 10px; margin-bottom: 6px; }
     .feature .emoji { font-size: 1.3rem; flex: 0 0 auto; }
-    .feature span.label { font-size: 0.92rem; font-weight: 600; }
+    .feature .label { font-size: 0.95rem; font-weight: 700; }
+    .feature .desc { font-size: 0.85rem; color: var(--text-muted); line-height: 1.4; margin: 0; }
 
     .cta {
       max-width: 640px; margin: 0 auto; text-align: center; padding: 56px 24px 64px;
@@ -185,17 +196,30 @@
       <h1>De lista de tarefas a <span class="accent">sistema de foco</span>.</h1>
       <p class="tagline">Bloqueia distrações durante a sessão, organiza o teu dia em blocos de tempo e mostra se focaste mesmo esta semana.</p>
       <p class="note">iPhone e iPad · Núcleo grátis, sem publicidade</p>
+      <p class="trust-row"><span><span class="star">★ 4,75</span> na App Store (4 avaliações)</span><span>· 🔒 Dados só no teu aparelho</span><span>· 👤 Feito por 1 developer independente</span></p>
     </div>
     <div class="visual">
-      <img src="../assets/lancamento-3-0/01-capa.jpg" width="800" height="1000" alt="Foco+ 3.0 — de lista de tarefas a sistema de foco" />
+      <img src="../assets/lancamento-3-0/01-capa.jpg" width="800" height="1000" alt="Cartão de divulgação do Foco+ 3.0: 'De lista de tarefas a sistema de foco' — o que construir uma app sozinho ensinou sobre produto. @focomais.app" />
     </div>
   </section>
 
   <div class="features reveal">
-    <div class="feature"><span class="emoji">🔒</span><span class="label">Bloqueador de foco</span></div>
-    <div class="feature"><span class="emoji">🎧</span><span class="label">Sons ambiente</span></div>
-    <div class="feature"><span class="emoji">🧱</span><span class="label">Blocos de tempo</span></div>
-    <div class="feature"><span class="emoji">📊</span><span class="label">Relatórios de foco</span></div>
+    <div class="feature">
+      <div class="feature-head"><span class="emoji">🔒</span><span class="label">Bloqueador de foco</span></div>
+      <p class="desc">Silencia apps e sites distrativos durante a sessão, usando o Tempo de Utilização do iOS.</p>
+    </div>
+    <div class="feature">
+      <div class="feature-head"><span class="emoji">🎧</span><span class="label">Sons ambiente</span></div>
+      <p class="desc">Ruído e lo-fi gerados na própria app, com mistura de sons e temporizador de sono automático.</p>
+    </div>
+    <div class="feature">
+      <div class="feature-head"><span class="emoji">🧱</span><span class="label">Blocos de tempo</span></div>
+      <p class="desc">Arrasta uma tarefa para a tua agenda — sincroniza nos dois sentidos com o Calendário.</p>
+    </div>
+    <div class="feature">
+      <div class="feature-head"><span class="emoji">📊</span><span class="label">Relatórios de foco</span></div>
+      <p class="desc">Vê os teus padrões de foco por semana, mês ou ano.</p>
+    </div>
   </div>
 
   <section class="cta reveal">
