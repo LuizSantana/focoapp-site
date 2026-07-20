@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-PT">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="icon" href="icon.png" type="image/png" />
+  <link rel="icon" href="../icon.png" type="image/png" />
   <title>Foco+ — De lista de tarefas a sistema de foco</title>
-  <meta name="description" content="Foco+ 3.0: bloqueia apps que te distraem, toca sons ambientes, organiza seu dia em blocos de tempo e mostra se você focou de verdade. Grátis pra começar." />
-  <link rel="canonical" href="https://focoapp.app/" />
+  <meta name="description" content="Foco+ 3.0: bloqueia apps que te distraem, toca sons ambiente, organiza o teu dia em blocos de tempo e mostra se focaste mesmo esta semana. Grátis para começar." />
+  <link rel="canonical" href="https://focoapp.app/pt-pt/" />
   <link rel="alternate" hreflang="pt-BR" href="https://focoapp.app/" />
   <link rel="alternate" hreflang="pt-PT" href="https://focoapp.app/pt-pt/" />
   <link rel="alternate" hreflang="en" href="https://focoapp.app/en/" />
@@ -14,31 +14,27 @@
 
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Foco+" />
-  <meta property="og:locale" content="pt_BR" />
-  <meta property="og:url" content="https://focoapp.app/" />
+  <meta property="og:locale" content="pt_PT" />
+  <meta property="og:url" content="https://focoapp.app/pt-pt/" />
   <meta property="og:title" content="Foco+ — De lista de tarefas a sistema de foco" />
-  <meta property="og:description" content="Foco+ 3.0: bloqueia apps que te distraem, toca sons ambientes, organiza seu dia em blocos de tempo e mostra se você focou de verdade. Grátis pra começar." />
-  <meta property="og:image" content="https://focoapp.app/header.jpg" />
+  <meta property="og:description" content="Foco+ 3.0: bloqueia apps que te distraem, toca sons ambiente, organiza o teu dia em blocos de tempo e mostra se focaste mesmo esta semana. Grátis para começar." />
+  <meta property="og:image" content="https://focoapp.app/header_pt-PT.jpg" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Foco+ — De lista de tarefas a sistema de foco" />
-  <meta name="twitter:description" content="Foco+ 3.0: bloqueia apps que te distraem, toca sons ambientes, organiza seu dia em blocos de tempo e mostra se você focou de verdade. Grátis pra começar." />
-  <meta name="twitter:image" content="https://focoapp.app/header.jpg" />
-
-  <!-- App Clip meta tag (Safari invocation) -->
-  <meta name="apple-itunes-app"
-        content="app-id=6769608711, app-clip-bundle-id=br.com.luizsantana.Foco.Clip, app-clip-display=card" />
+  <meta name="twitter:description" content="Foco+ 3.0: bloqueia apps que te distraem, toca sons ambiente, organiza o teu dia em blocos de tempo e mostra se focaste mesmo esta semana. Grátis para começar." />
+  <meta name="twitter:image" content="https://focoapp.app/header_pt-PT.jpg" />
 
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "SoftwareApplication",
     "name": "Foco+",
-    "url": "https://focoapp.app/",
+    "url": "https://focoapp.app/pt-pt/",
     "applicationCategory": "ProductivityApplication",
     "operatingSystem": "iOS, iPadOS, macOS, watchOS, visionOS",
-    "description": "Foco+ 3.0: bloqueia apps que te distraem, toca sons ambientes, organiza seu dia em blocos de tempo e mostra se você focou de verdade.",
+    "description": "Foco+ 3.0: bloqueia apps que te distraem, toca sons ambiente, organiza o teu dia em blocos de tempo e mostra se focaste mesmo esta semana.",
     "offers": [
-      { "@type": "Offer", "price": "0", "priceCurrency": "BRL", "name": "Foco+ (núcleo grátis)" },
+      { "@type": "Offer", "price": "0", "priceCurrency": "EUR", "name": "Foco+ (núcleo grátis)" },
       { "@type": "Offer", "price": "39.90", "priceCurrency": "BRL", "name": "Foco+ Pro (compra única vitalícia)" }
     ]
   }
@@ -47,7 +43,6 @@
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
 
-    /* Foco+ Design System — tokens (Documentos/Especificações e Mockups/Design/DESIGN_LiquidGlass.md) */
     :root {
       color-scheme: light dark;
       --bg: #f9f9ff;
@@ -57,9 +52,6 @@
       --text-muted: #414755;
       --nav-muted: #6e6e73;
       --nav-sep: #d8d9e5;
-      /* accent text needs AA contrast on light bg — pure brand orange (#FF6A00) only hits ~2.9:1,
-         so text/buttons use the design system's darker "tertiary" tone; full-saturation orange
-         stays for non-text accents (icon, dark mode) where contrast is already high. */
       --accent-text: #9E3D00;
       --accent-btn-bg: #9E3D00;
       --accent-btn-text: #ffffff;
@@ -174,44 +166,44 @@
 </head>
 <body>
   <div class="site-nav">
-    <a href="./" class="active">Início</a><span class="sep">·</span>
-    <a href="sobre/">Sobre</a><span class="sep">·</span>
-    <a href="suporte/">Suporte</a><span class="sep">·</span>
-    <a href="novidades/">Novidades</a><span class="sep">·</span>
-    <a href="termos/">Termos</a><span class="sep">·</span>
-    <a href="privacidade/">Privacidade</a>
+    <a href="../">Início</a><span class="sep">·</span>
+    <a href="../sobre/pt-pt/">Sobre</a><span class="sep">·</span>
+    <a href="../suporte/pt-pt/">Suporte</a><span class="sep">·</span>
+    <a href="../novidades/pt-pt/">Novidades</a><span class="sep">·</span>
+    <a href="../termos/pt-pt/">Termos</a><span class="sep">·</span>
+    <a href="../privacidade/pt-pt/">Privacidade</a>
   </div>
   <div class="lang-switch">
-    <a href="./" class="active">PT-BR</a>
-    <a href="pt-pt/">PT-PT</a>
-    <a href="en/">EN</a>
+    <a href="../">PT-BR</a>
+    <a href="./" class="active">PT-PT</a>
+    <a href="../en/">EN</a>
   </div>
 
   <section class="hero">
     <div class="copy">
       <div class="pill">Foco+ 3.0</div>
       <h1>De lista de tarefas a <span class="accent">sistema de foco</span>.</h1>
-      <p class="tagline">Bloqueia distrações durante a sessão, organiza seu dia em blocos de tempo e mostra se você focou de verdade essa semana.</p>
-      <p class="note">iPhone e iPad · Núcleo grátis, sem anúncio</p>
+      <p class="tagline">Bloqueia distrações durante a sessão, organiza o teu dia em blocos de tempo e mostra se focaste mesmo esta semana.</p>
+      <p class="note">iPhone e iPad · Núcleo grátis, sem publicidade</p>
     </div>
     <div class="visual">
-      <img src="assets/lancamento-3-0/01-capa.jpg" width="800" height="1000" alt="Foco+ 3.0 — de lista de tarefas a sistema de foco" />
+      <img src="../assets/lancamento-3-0/01-capa.jpg" width="800" height="1000" alt="Foco+ 3.0 — de lista de tarefas a sistema de foco" />
     </div>
   </section>
 
   <div class="features reveal">
     <div class="feature"><span class="emoji">🔒</span><span class="label">Bloqueador de foco</span></div>
-    <div class="feature"><span class="emoji">🎧</span><span class="label">Sons ambientes</span></div>
+    <div class="feature"><span class="emoji">🎧</span><span class="label">Sons ambiente</span></div>
     <div class="feature"><span class="emoji">🧱</span><span class="label">Blocos de tempo</span></div>
     <div class="feature"><span class="emoji">📊</span><span class="label">Relatórios de foco</span></div>
   </div>
 
   <section class="cta reveal">
-    <h2>Pronto pra focar de verdade?</h2>
+    <h2>Pronto para focar a sério?</h2>
     <a class="badge" href="https://apps.apple.com/app/id6769608711" target="_blank" rel="noopener">
-      <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Baixar na App Store" />
+      <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Transferir na App Store" />
     </a>
-    <a class="secondary-link" href="sobre/">Ver todos os recursos →</a>
+    <a class="secondary-link" href="../sobre/pt-pt/">Ver todos os recursos →</a>
   </section>
 
   <footer>
