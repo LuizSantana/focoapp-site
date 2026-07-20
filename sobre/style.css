@@ -1,29 +1,71 @@
 * { box-sizing: border-box; margin: 0; padding: 0; }
+
+/* Foco+ Design System — tokens (Documentos/Especificações e Mockups/Design/DESIGN_LiquidGlass.md) */
+:root {
+  color-scheme: light dark;
+  --bg: #f5f5f7;
+  --surface: #ffffff;
+  --border: rgba(0,0,0,.06);
+  --text: #1d1d1f;
+  --text-muted: #48484a;
+  --nav-muted: #6e6e73;
+  --nav-sep: #c7c7cc;
+  --footer-muted: #86868b;
+  /* pure brand orange (#FF6A00) is ~2.9:1 on white — fails AA for text.
+     text/links use the design system's darker "tertiary" tone instead;
+     full-saturation orange is reserved for the hero gradient and dark mode. */
+  --accent-text: #9E3D00;
+  --accent-btn-bg: #9E3D00;
+  --accent-btn-text: #ffffff;
+  --pro-badge-bg: #171310;
+  --pro-badge-text: #ffffff;
+  --card-shadow: rgba(0,0,0,.06);
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0c0a09;
+    --surface: #17140f;
+    --border: #262019;
+    --text: #f2f1ef;
+    --text-muted: #b9b5b0;
+    --nav-muted: #9a9691;
+    --nav-sep: #3a3632;
+    --footer-muted: #726e69;
+    --accent-text: #FF8A2A;
+    --accent-btn-bg: #FF8A2A;
+    --accent-btn-text: #17140f;
+    --pro-badge-bg: #FF8A2A;
+    --pro-badge-text: #17140f;
+    --card-shadow: rgba(0,0,0,.4);
+  }
+}
+
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  background: #f5f5f7;
-  color: #1d1d1f;
+  background: var(--bg);
+  color: var(--text);
   line-height: 1.5;
 }
 
 .site-nav {
   display: flex; flex-wrap: wrap; justify-content: center; padding: 16px 24px 0; font-size: 0.85rem;
 }
-.site-nav a { color: #6e6e73; text-decoration: none; margin: 0 8px; }
-.site-nav a.active { color: #FF6A00; font-weight: 600; }
-.site-nav .sep { color: #c7c7cc; }
+.site-nav a { color: var(--nav-muted); text-decoration: none; margin: 0 8px; }
+.site-nav a.active { color: var(--accent-text); font-weight: 600; }
+.site-nav .sep { color: var(--nav-sep); }
 
 .lang-switch {
   display: flex; justify-content: center; gap: 8px; padding: 10px 24px 0;
 }
 .lang-switch a {
   font-size: 0.85rem; font-weight: 600; text-decoration: none;
-  color: #6e6e73; padding: 6px 14px; border-radius: 999px; background: #fff;
+  color: var(--nav-muted); padding: 6px 14px; border-radius: 999px; background: var(--surface);
   box-shadow: 0 1px 3px rgba(0,0,0,.06);
 }
-.lang-switch a.active { color: #fff; background: #FF6A00; }
+.lang-switch a.active { color: var(--accent-btn-text); background: var(--accent-btn-bg); }
 
 .hero {
+  /* fixed brand gradient — intentionally identical in light/dark, text contrast verified ~7:1 */
   background: linear-gradient(160deg, #FF9F0A 0%, #FF6A00 55%, #E5484D 110%);
   color: #171310;
   text-align: center;
@@ -42,36 +84,36 @@ section > h2 {
   font-size: 1.6rem; font-weight: 700; margin-bottom: 8px;
   display: flex; align-items: center; gap: 10px; justify-content: center; text-align: center;
 }
-section > .section-sub { text-align: center; color: #6e6e73; font-size: 1rem; margin-bottom: 28px; }
+section > .section-sub { text-align: center; color: var(--nav-muted); font-size: 1rem; margin-bottom: 28px; }
 .pro-badge {
   font-size: 0.65rem; font-weight: 800; letter-spacing: 0.04em;
-  color: #fff; background: #171310; padding: 3px 8px; border-radius: 6px;
+  color: var(--pro-badge-text); background: var(--pro-badge-bg); padding: 3px 8px; border-radius: 6px;
 }
 
 .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 14px; }
-.card { background: #fff; border-radius: 16px; padding: 22px 22px; box-shadow: 0 1px 3px rgba(0,0,0,.06); }
+.card { background: var(--surface); border: 1px solid var(--border); border-radius: 16px; padding: 22px 22px; box-shadow: 0 1px 3px var(--card-shadow); }
 .card .emoji { font-size: 1.6rem; display: block; margin-bottom: 10px; }
 .card h3 { font-size: 1.02rem; font-weight: 600; margin-bottom: 6px; }
-.card p { color: #48484a; font-size: 0.93rem; }
+.card p { color: var(--text-muted); font-size: 0.93rem; }
 
 .platforms { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; }
 .platform-pill {
-  background: #fff; border-radius: 999px; padding: 12px 22px; box-shadow: 0 1px 3px rgba(0,0,0,.06);
+  background: var(--surface); border: 1px solid var(--border); border-radius: 999px; padding: 12px 22px; box-shadow: 0 1px 3px var(--card-shadow);
   font-weight: 600; font-size: 0.95rem; display: flex; align-items: center; gap: 8px;
 }
 
 .privacy-box {
-  background: #fff; border-radius: 16px; padding: 28px 28px; text-align: center;
-  box-shadow: 0 1px 3px rgba(0,0,0,.06);
+  background: var(--surface); border: 1px solid var(--border); border-radius: 16px; padding: 28px 28px; text-align: center;
+  box-shadow: 0 1px 3px var(--card-shadow);
 }
-.privacy-box p { color: #48484a; font-size: 0.97rem; margin-bottom: 14px; }
-.privacy-box a { color: #FF6A00; font-weight: 600; text-decoration: none; }
+.privacy-box p { color: var(--text-muted); font-size: 0.97rem; margin-bottom: 14px; }
+.privacy-box a { color: var(--accent-text); font-weight: 600; text-decoration: none; }
 .privacy-box a:hover { text-decoration: underline; }
 
 .cta { text-align: center; }
 .cta .badge img { height: 52px; }
 .cta p.support-link { margin-top: 18px; font-size: 0.92rem; }
-.cta p.support-link a { color: #FF6A00; font-weight: 600; text-decoration: none; }
+.cta p.support-link a { color: var(--accent-text); font-weight: 600; text-decoration: none; }
 
-footer { text-align: center; padding: 24px; color: #86868b; font-size: 0.85rem; }
-footer a { color: #86868b; }
+footer { text-align: center; padding: 24px; color: var(--footer-muted); font-size: 0.85rem; }
+footer a { color: var(--footer-muted); }
