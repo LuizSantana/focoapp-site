@@ -40,29 +40,34 @@
 
     <header class="page-header">
       <h1>Política de Privacidade do Foco+</h1>
-      <p class="effective">Vigência: 5 de julho de 2026</p>
+      <p class="effective">Vigência: 24 de julho de 2026</p>
       <p class="intro">O Foco+ é um app simples: quase tudo fica no seu dispositivo. Este aviso descreve exatamente o que coletamos — e é pouca coisa.</p>
     </header>
 
     <article>
       <h2>O que coletamos</h2>
       <p>O Foco+ não coleta dados pessoais identificáveis. Não há cadastro de conta, não pedimos nome, e-mail, endereço IP ou localização.</p>
-      <p>A única informação que coletamos são <strong>registros de uso anônimos e agregados para identificar falhas (crashes)</strong>, fornecidos pela própria Apple através do App Store Connect Analytics.</p>
+      <p>Coletamos duas categorias de dados, sempre anônimas e nunca vinculadas à sua identidade:</p>
+      <ul>
+        <li><strong>Relatórios de falhas (crashes)</strong> — via Firebase Crashlytics (Google) e App Store Connect Analytics (Apple).</li>
+        <li><strong>Uso de funcionalidades</strong> — via Firebase Analytics (Google), sem suporte a identificador de publicidade (IDFA). Registramos só quais telas você visita e ações categóricas (ex: "tarefa concluída", "Pomodoro iniciado") — nunca o conteúdo que você cria (títulos, textos, anexos).</li>
+      </ul>
+      <p>Nenhum desses dados é vinculado à sua identidade nem usado para rastreamento entre apps, conforme declarado no manifesto de privacidade que a própria Apple valida na App Store.</p>
 
       <h2>Como usamos essas informações</h2>
-      <p>Usamos exclusivamente para identificar, diagnosticar e corrigir falhas técnicas do aplicativo, e entender métricas gerais e anônimas como número de downloads. Nenhuma informação pessoal é coletada nesse processo.</p>
+      <p>Usamos para identificar e corrigir falhas técnicas, entender quais funcionalidades são mais usadas (pra priorizar o que melhorar) e medir, de forma agregada e anônima, o resultado das nossas campanhas de divulgação no Google Ads (por exemplo, quantas instalações vieram de um anúncio). Nenhuma informação pessoal ou conteúdo criado por você entra nesse processo.</p>
 
       <h2>Onde os seus dados ficam</h2>
       <p>Todos os dados que você cria no app — tarefas, ideias, lembretes, eventos e progresso — ficam armazenados localmente no seu dispositivo, usando o SwiftData do iOS. Nunca enviamos esses dados para servidores externos.</p>
 
       <h2>Serviços de terceiros</h2>
-      <p>Utilizamos apenas os relatórios de falhas e analytics anônimos e agregados fornecidos pela própria Apple (App Store Connect Analytics). Não usamos SDKs de publicidade nem rastreadores de terceiros. Compras dentro do app (Foco+ Pro) são processadas inteiramente pela Apple — não temos acesso aos seus dados de pagamento.</p>
+      <p>Usamos Firebase Analytics e Firebase Crashlytics (Google) para as finalidades acima, além dos relatórios agregados da própria Apple (App Store Connect Analytics). Não coletamos identificador de publicidade (IDFA) e não usamos SDKs de anúncio nem rastreadores de terceiros para exibir anúncios dentro do app. Compras dentro do app (Foco+ Pro) são processadas inteiramente pela Apple — não temos acesso aos seus dados de pagamento.</p>
 
       <h2>Anúncios</h2>
-      <p>O Foco+ não exibe anúncios e não compartilha dados com redes de publicidade.</p>
+      <p>O Foco+ não exibe anúncios e não vende nem compartilha seus dados com redes de publicidade para monetização. Como divulgamos o próprio Foco+ no Google Ads, sinais agregados e anônimos de conversão (por exemplo, "uma instalação aconteceu") podem ser enviados ao Google pra medir o resultado dessas campanhas — nunca vinculados à sua identidade ou à sua atividade dentro do app.</p>
 
       <h2>Retenção de dados</h2>
-      <p>Não armazenamos registros de uso em servidores próprios — não temos servidor próprio. Os relatórios agregados de falhas são mantidos pela Apple, conforme a política da própria Apple.</p>
+      <p>Não armazenamos registros de uso em servidores próprios — não temos servidor próprio. Os relatórios agregados de falhas e uso são mantidos pela Apple e pelo Google (Firebase), conforme a política de retenção de cada um.</p>
 
       <h2>Seus direitos</h2>
       <p>Como não coletamos dados pessoais identificáveis, não há informações pessoais suas para acessar, corrigir, excluir ou portar. Se isso mudar no futuro, atualizaremos esta política e ofereceremos os mecanismos apropriados para exercer esses direitos.</p>

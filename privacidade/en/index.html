@@ -41,29 +41,34 @@
 
     <header class="page-header">
       <h1>Foco+ Privacy Policy</h1>
-      <p class="effective">Effective: July 5, 2026</p>
+      <p class="effective">Effective: July 24, 2026</p>
       <p class="intro">Foco+ is a simple app: almost everything stays on your device. This notice describes exactly what we collect — and it's very little.</p>
     </header>
 
     <article>
       <h2>What we collect</h2>
       <p>Foco+ doesn't collect identifiable personal data. There's no account signup, and we don't ask for your name, email, IP address, or location.</p>
-      <p>The only information we collect is <strong>anonymous, aggregated usage logs to identify crashes</strong>, provided by Apple itself through App Store Connect Analytics.</p>
+      <p>We collect two categories of data, always anonymous and never linked to your identity:</p>
+      <ul>
+        <li><strong>Crash reports</strong> — via Firebase Crashlytics (Google) and App Store Connect Analytics (Apple).</li>
+        <li><strong>Feature usage</strong> — via Firebase Analytics (Google), without Advertising ID (IDFA) support. We only log which screens you visit and categorical actions (e.g. "task completed", "Pomodoro started") — never the content you create (titles, text, attachments).</li>
+      </ul>
+      <p>None of this data is linked to your identity or used for cross-app tracking, as declared in the privacy manifest Apple itself validates on the App Store.</p>
 
       <h2>How we use this information</h2>
-      <p>We use it exclusively to identify, diagnose, and fix technical issues in the app, and to understand general, anonymous metrics like download counts. No personal information is collected in this process.</p>
+      <p>We use it to identify and fix technical issues, understand which features get used most (to prioritize what to improve), and measure, in aggregate and anonymously, how our Google Ads promotional campaigns perform (for example, how many installs came from an ad). No personal information or content you create ever enters this process.</p>
 
       <h2>Where your data lives</h2>
       <p>All the data you create in the app — tasks, ideas, reminders, events, and progress — is stored locally on your device using iOS's SwiftData. We never send this data to external servers.</p>
 
       <h2>Third-party services</h2>
-      <p>We only use anonymous, aggregated crash reports and analytics provided by Apple itself (App Store Connect Analytics). We don't use advertising SDKs or third-party trackers. In-app purchases (Foco+ Pro) are processed entirely by Apple — we have no access to your payment data.</p>
+      <p>We use Firebase Analytics and Firebase Crashlytics (Google) for the purposes above, plus Apple's own aggregated reports (App Store Connect Analytics). We don't collect an Advertising ID (IDFA) and don't use ad SDKs or third-party trackers to show ads inside the app. In-app purchases (Foco+ Pro) are processed entirely by Apple — we have no access to your payment data.</p>
 
       <h2>Ads</h2>
-      <p>Foco+ doesn't show ads and doesn't share data with advertising networks.</p>
+      <p>Foco+ doesn't show ads and doesn't sell or share your data with advertising networks for monetization. Since we promote Foco+ itself on Google Ads, aggregate and anonymous conversion signals (for example, "an install happened") may be sent to Google to measure how those campaigns perform — never linked to your identity or your activity inside the app.</p>
 
       <h2>Data retention</h2>
-      <p>We don't store usage logs on our own servers — we don't have one. Aggregated crash reports are kept by Apple, per Apple's own policy.</p>
+      <p>We don't store usage logs on our own servers — we don't have one. Aggregated crash and usage reports are kept by Apple and by Google (Firebase), per each company's own retention policy.</p>
 
       <h2>Your rights</h2>
       <p>Since we don't collect identifiable personal data, there's no personal information of yours to access, correct, delete, or port. If this changes in the future, we'll update this policy and provide appropriate mechanisms to exercise those rights.</p>
